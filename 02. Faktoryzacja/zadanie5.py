@@ -6,6 +6,7 @@ def CzyZlozona(x):
         if x % i == 0:
             return True
     return False
+
 def SumaCyfr(x):
     suma = 0
     while x > 0:

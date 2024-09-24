@@ -13,14 +13,17 @@ plik.close()
 
 print(numbers)
 
-wynik = 0
-max_suma_dzielnikow_pierwszych = 0
+wynik = []
+min_suma_dzielnikow_pierwszych = max(numbers)
 for number in numbers:
     suma_dzielnikow_pierwszych = 0
     for i in range(2, number // 2 + 1):
         if number % i == 0 and IfPrime(i):
             suma_dzielnikow_pierwszych += i
-    if max_suma_dzielnikow_pierwszych < suma_dzielnikow_pierwszych:
+    if min_suma_dzielnikow_pierwszych > suma_dzielnikow_pierwszych:
         wynik = number
-        max_suma_dzielnikow_pierwszych = suma_dzielnikow_pierwszych
+        min_suma_dzielnikow_pierwszych = suma_dzielnikow_pierwszych
+
+
+
 print(wynik)
