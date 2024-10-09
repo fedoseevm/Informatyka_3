@@ -20,7 +20,7 @@ numbers = [int(input(f"Podaj {i + 1} liczbe ciagu: ")) for i in range(10)]
 
 a = int(input("\nPodaj calkowita liczbe a: "))
 if not IfASC(numbers):
-    print("Ciag musi byc uporzadkowany niemalejaco")
+    print("Ciag musi byc uporza dkowany niemalejaco")
 else:
     if BinarySearch(numbers, a, len(numbers)):
         print("tak")
