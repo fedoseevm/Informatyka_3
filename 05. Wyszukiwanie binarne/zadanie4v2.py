@@ -12,9 +12,9 @@ def BinarySearch(T, a, n):
 
 file = open("ciagi2.txt", "r")
 lines = file.readlines()
+n = int(lines[0].rstrip())
 file.close()
 
-n = int(lines[0].rstrip())
 for i in range(n):
     d = int(lines[2 * i + 1].rstrip())
     ciag = list(map(int, lines[2 * i + 2].split()))

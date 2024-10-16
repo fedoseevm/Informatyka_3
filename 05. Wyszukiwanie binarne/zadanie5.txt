@@ -1,0 +1,10 @@
+funkcja wyszukiwanie_binarne(T, a, n):
+  lewy ← 1
+  prawy ← n-1
+  dopóki lewy < prawy wykonuj:
+    srodek ← (lewy + prawy) div 2
+    jeżeli T[srodek] < a to:
+      lewy ← srodek +1
+    w przeciwnym wypadku:
+      prawy ← srodek
+  zwróć T[lewy] = a i zakończ
