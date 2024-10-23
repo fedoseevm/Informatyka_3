@@ -5,9 +5,20 @@ with open("losowe.txt", "w") as plik:
         plik.write(str(random.randint(1, 100)) + "\n")
 
 suma = 0
-min = 0
-max = 100
+minimum = 100
+maximum = 0
 avg = 0
 with open("losowe.txt", "r") as plik:
     for line in plik:
-        suma += int(line)
+        liczba = int(line.rstrip())
+        suma += liczba
+        if minimum > liczba:
+            minimum = liczba
+        if maximum < liczba:
+            maximum = liczba
+avg = suma / 10
+
+print("Suma = " + str(suma))
+print("Minimum: " + str(minimum))
+print("Maximum: " + str(maximum))
+print("Srednia = " + str(avg))
