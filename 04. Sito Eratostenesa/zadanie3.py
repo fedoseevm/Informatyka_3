@@ -26,7 +26,8 @@ for i in range(2, n + 1):
 #   jeżeli czy_pierwsza[p]=prawda
 #     index ← p * p
 #     dopóki index ⩽ n wykonuj
-#       czy_pierwsza[i] ← fałsz
+#       czy_pierwsza[index] ← fałsz
+#       index ← index + p
 #   p ← p + 1
 # dla i=2,3,...,n wykonuj
 #   jeżeli czy_pierwsza[i]=prawda to
