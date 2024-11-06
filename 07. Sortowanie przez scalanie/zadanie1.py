@@ -18,7 +18,7 @@ def Scale(T, left, center, right):
         tempTable[k] = T[j]
         j += 1
         k += 1
-    for i in range(left, right):
+    for i in range(left, right + 1):
         T[i] = tempTable[i]
 
 
@@ -30,7 +30,8 @@ def Sort(T, left, right):
         Scale(T, left, center, right)
 
 
-ciag = list(map(int, input().split()))
-# print(ciag)
+ciag = list(map(int, input("Podaj ciag liczb: ").split()))
+print(ciag)
 tempTable = [0] * len(ciag)
 Sort(ciag, 0, len(ciag) - 1)
+print(ciag)
