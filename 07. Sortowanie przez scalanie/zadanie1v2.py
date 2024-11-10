@@ -5,15 +5,18 @@ def scal(T1, T2):
     i = 0
     j = 0
     while i < n1 and j < n2:
-        if T1[j] < T2[j]:
-            wynik.append(T[i])
+        if T1[i] < T2[j]:
+            wynik.append(T1[i])
             i += 1
         else:
-            wynik.append(T[j])
+            wynik.append(T2[j])
             j += 1
 
     wynik.extend(T1[i:])
     wynik.extend(T2[j:])
+    return wynik
+
+
 def sort(T):
     n = len(T)
     if n == 1:
