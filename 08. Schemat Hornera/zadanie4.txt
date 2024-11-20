@@ -1,0 +1,11 @@
+// Zadanie 1 z odwróconą kolejnością współczynników a
+y = A[n]
+potega = 1
+dla i = n - 1,n - 2, ..., o wykonuj
+    potega = potega * x
+    y = y + A[i] * potega
+
+// Zadanie 2 (schemat Hornera) z odwróconą kolejnością współczynników a
+y = A[0]
+dla i = 1, 2, ..., n wykonuj
+    y = x * y + A[i]
