@@ -4,5 +4,5 @@ print(numbers)
 n = len(numbers)
 
 for startIndex in range(n):
-    for endIndex in range(startIndex, n):
-        print(*numbers[startIndex:endIndex + 1])
+    for endIndex in range(startIndex + 1, n + 1):
+        print(*numbers[startIndex:endIndex])
