@@ -27,8 +27,8 @@ max_length = 0
 counter = 1
 startIndex = 0
 maxStartIndex = 0
-for i in range(n - 1):
-    if numbers[i] <= numbers[i + 1]:
+for i in range(1, n):
+    if numbers[i] >= numbers[i - 1]:
         counter += 1
     else:
         if max_length < counter:
