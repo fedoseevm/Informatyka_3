@@ -7,10 +7,10 @@ print(numbers)
 
 n = len(numbers)
 counter = 0
-for i in range(0, n - 1, 2):
+for i in range(0, n - 1):
     pair = int(numbers[i] + numbers[i + 1])
-    print(pair, end=" ")
     if pair > 90:
+        # print(pair, end=" ")
         counter += 1
 print(counter)
 
