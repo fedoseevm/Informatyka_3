@@ -1,7 +1,7 @@
 with open("pi.txt", "r") as file:
     numbers = list(file.read().split())
 n = len(numbers)
-freq = {}
+freq = {}   # Dictionary which contains key value pairs
 for i in range(10):
     for j in range(10):
         freq[f"{i}{j}"] = 0
