@@ -18,15 +18,15 @@ while i < n - 1:
             temp_position += 1
         temp_string.append(numbers[temp_position])
         temp_position += 1
-        while numbers[temp_position] > numbers[temp_position + 1]:
+        while temp_position + 1 < n and numbers[temp_position] > numbers[temp_position + 1]:
             temp_string.append(numbers[temp_position])
             temp_position += 1
         temp_string.append(numbers[temp_position])
 
         if len(result_string) < len(temp_string):
-            result_position = i
+            result_position = i + 1
             result_string = temp_string
-        i = temp_position
+        i = temp_position - 1
     i += 1
 print(result_position)
 print(*result_string, sep="")
