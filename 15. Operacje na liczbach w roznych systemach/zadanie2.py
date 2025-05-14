@@ -9,12 +9,11 @@ result = ""
 przeniesienie = 0
 
 for i in range(maxLength - 1, -1, -1):
-    suma = 0
-    suma += int(bin1[i]) + int(bin2[i]) + przeniesienie
+    suma = int(bin1[i]) + int(bin2[i]) + przeniesienie
     result = str(suma % 2) + result
     przeniesienie = suma // 2
 
 if przeniesienie:
-    result = "1" + result
+    result = str(przeniesienie) + result
 
 print(result)
