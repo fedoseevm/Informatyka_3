@@ -13,6 +13,16 @@ a = input("Podaj pierwszą liczbę: ")
 b = input("Podaj drugą liczbę: ")
 
 result = ""
+carry = 0
 
+wyrownajLiczby(a, b)
+
+for i in range(len(a) - 1, -1, -1):
+    suma = int(a[i]) + int(b[i]) + carry
+    result = str(suma % p) + result
+    carry = suma // p
+
+if carry:
+    result = str(carry) + result
 
 print(result)
