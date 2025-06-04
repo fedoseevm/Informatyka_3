@@ -1,0 +1,7 @@
+Zadanie 13.1
+nazwa_aktywnosci	ilosc_aktywnosci
+silownia	193
+scianka wspinaczkowa	185
+sztuki walki	114
+squash	102
+nordic walking	101
